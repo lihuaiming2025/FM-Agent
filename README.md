@@ -9,6 +9,7 @@
 🚩 <a href="https://cloud.baidu.com/product/famou.html" style="vertical-align:middle;"> **Official Website**</a> |
 📄 **[Tech Report](https://github.com/baidubce/FM-Agent/blob/main/docs/FMAgent_TechReport.pdf)** |
 📌  <a href="https://arxiv.org/pdf/2510.26144" style="vertical-align:middle;"> **Arxiv Link**</a> |
+🧪 <a href="https://baidubce.github.io/FM-Agent/fde-bench/" style="vertical-align:middle;"> **FDE-Bench**</a> |
 <a href="https://cloud.baidu.com/" style="vertical-align:middle;"><img src="docs/images/ACG.png" alt="ModelBuilder" width="16" height="16" style="vertical-align:middle;"/> **Baidu AI Cloud**</a>
 </div>
 
@@ -17,7 +18,19 @@
   <img src="docs/images/main.png" width="700" height="700"/>
 </p>
  
-## Introduction
+## 📰 News
+- **[2026-10]** 🔥 We release **[FDE-Bench](https://baidubce.github.io/FM-Agent/fde-bench/)**, a benchmark for end-to-end delivery from underspecified real-world business requests: 49 real customer projects (29 combinatorial optimization + 20 machine learning) with 266 annotated clarification targets. [Project Page](https://baidubce.github.io/FM-Agent/fde-bench/) · [Paper](https://baidubce.github.io/FM-Agent/fde-bench/assets/FDE-Bench.pdf) · [Code](FDE-Bench/)
+- **[2026-03]** We release **[Famou for Science](Famou_for_Science/)**, an autonomous research workflow powered by Famou, with a nuclear reactor physics example.
+- **[2025-10]** The **[FM Agent](https://arxiv.org/abs/2510.26144)** technical report is available on arXiv.
+
+## 🗂️ Our Works
+| Work | Type | Description | Links |
+| --- | --- | --- | --- |
+| **FDE-Bench** | Benchmark | Evaluates whether agents can clarify missing requirements with a simulated customer and deliver a solution that meets real customer acceptance criteria. | [Project Page](https://baidubce.github.io/FM-Agent/fde-bench/) · [Paper](https://baidubce.github.io/FM-Agent/fde-bench/assets/FDE-Bench.pdf) · [Code](FDE-Bench/) |
+| **Famou for Science** | Application | Drives research, experiments, and paper writing end to end with Famou; the example searches for analytical solutions of the 2D two-group neutron diffusion equation. | [Directory](Famou_for_Science/) |
+| **FM Agent** | Framework | General-purpose multi-agent framework combining LLM reasoning with large-scale evolutionary search (details below). | [arXiv](https://arxiv.org/abs/2510.26144) · [Tech Report](docs/FMAgent_TechReport.pdf) |
+
+## FM Agent
 FM Agent is a novel, general-purpose multi-agent framework that addresses complex real-world challenges by synergistically combining LLM-based reasoning and large-scale evolutionary search. Demonstrating broad applicability, our system has been evaluated across diverse domains, including operations research, machine learning, GPU kernel optimization, and classical mathematical problems.
 
 
@@ -71,9 +84,22 @@ If you use FM Agent in your research, please cite:
 }
 ```
 
+If you use FDE-Bench, please cite:
+
+```bibtex
+@misc{li2026fdebench,
+      title={FDE-Bench: Evaluating End-to-End Delivery from Underspecified Real-World Business Requests},
+      author={Huaiming Li and Can Huang and others},
+      year={2026},
+      url={https://baidubce.github.io/FM-Agent/fde-bench/},
+}
+```
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+The MIT License does not cover FDE-Bench. Its code and case data live in [`FDE-Bench/`](FDE-Bench/); see [`FDE-Bench/LICENSE_STATUS.md`](FDE-Bench/LICENSE_STATUS.md) for their current status. The paper and figures under `docs/fde-bench/` remain with their authors, and the bundled fonts keep their own OFL licenses.
 
 ## Contact Us
 

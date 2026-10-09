@@ -9,6 +9,7 @@
 🚩 <a href="https://cloud.baidu.com/product/famou.html" style="vertical-align:middle;"> **官方网址**</a> |
 📄 **[技术报告](https://github.com/baidubce/FM-Agent/blob/main/docs/FMAgent_TechReport.pdf)** |
 📌  <a href="https://arxiv.org/pdf/2510.26144" style="vertical-align:middle;"> **Arxiv 链接**</a> |
+🧪 <a href="https://baidubce.github.io/FM-Agent/fde-bench/" style="vertical-align:middle;"> **FDE-Bench**</a> |
 <a href="https://cloud.baidu.com/" style="vertical-align:middle;"><img src="docs/images/ACG.png" alt="ModelBuilder" width="16" height="16" style="vertical-align:middle;"/> **百度智能云**</a>
 </div>
 
@@ -17,7 +18,19 @@
   <img src="docs/images/main.png" width="700" height="700"/>
 </p>
  
-## 论文简介
+## 📰 最新动态
+- **[2026-10]** 🔥 发布 **[FDE-Bench](https://baidubce.github.io/FM-Agent/fde-bench/)**：面向「需求不完整的真实业务请求」的端到端交付评测集，包含 49 个真实客户项目（29 个组合优化 + 20 个机器学习）和 266 个标注澄清点。[项目主页](https://baidubce.github.io/FM-Agent/fde-bench/) · [论文](https://baidubce.github.io/FM-Agent/fde-bench/assets/FDE-Bench.pdf) · [代码](FDE-Bench/)
+- **[2026-03]** 发布 **[Famou for Science](Famou_for_Science/)**：基于伐谋的自主科研工作流，附核反应堆物理示例。
+- **[2025-10]** **[FM Agent](https://arxiv.org/abs/2510.26144)** 技术报告发布于 arXiv。
+
+## 🗂️ 系列工作
+| 工作 | 类型 | 简介 | 链接 |
+| --- | --- | --- | --- |
+| **FDE-Bench** | 评测集 | 评估智能体能否通过与模拟客户对话澄清缺失需求，并交付满足真实客户验收标准的方案。 | [项目主页](https://baidubce.github.io/FM-Agent/fde-bench/) · [论文](https://baidubce.github.io/FM-Agent/fde-bench/assets/FDE-Bench.pdf) · [代码](FDE-Bench/) |
+| **Famou for Science** | 应用 | 用伐谋端到端推进科研、实验与论文写作；示例为二维双群中子扩散方程解析解搜索。 | [目录](Famou_for_Science/) |
+| **FM Agent** | 框架 | 结合大模型推理与大规模进化搜索的通用多智能体框架（详见下文）。 | [arXiv](https://arxiv.org/abs/2510.26144) · [技术报告](docs/FMAgent_TechReport.pdf) |
+
+## FM Agent
 FM Agent 是一种新颖的、通用的多智能体框架，它通过协同结合大语言模型驱动的推理和大规模进化搜索来解决复杂的现实世界难题。我们的系统展现出广泛的适用性，已在包括运筹学、机器学习、GPU 内核优化和经典数学问题在内的各种领域进行了评估。
 
 
@@ -71,9 +84,22 @@ FM Agent 在无人为干预或调优的情况下，自主达到了最先进的�
 }
 ```
 
+如果您使用了 FDE-Bench，请引用：
+
+```bibtex
+@misc{li2026fdebench,
+      title={FDE-Bench: Evaluating End-to-End Delivery from Underspecified Real-World Business Requests},
+      author={Huaiming Li and Can Huang and others},
+      year={2026},
+      url={https://baidubce.github.io/FM-Agent/fde-bench/},
+}
+```
+
 ## 许可证
 
 本项目遵循 MIT 许可证。详见 [LICENSE](LICENSE) 文件。
+
+FDE-Bench 不适用上述 MIT 许可证：其代码与案例数据位于 [`FDE-Bench/`](FDE-Bench/)，许可状态见 [`FDE-Bench/LICENSE_STATUS.md`](FDE-Bench/LICENSE_STATUS.md)；`docs/fde-bench/` 下的论文与图片版权归作者所有，内置字体沿用各自的 OFL 许可。
 
 ## 联系我们
 
