@@ -2,7 +2,7 @@
 
 **Evaluating End-to-End Delivery from Underspecified Real-World Business Requests**
 
-[Project page](https://baidubce.github.io/FM-Agent/fde-bench/) · [Paper](https://baidubce.github.io/FM-Agent/fde-bench/assets/FDE-Bench.pdf) · [Case inventory](case/) · [Data download](https://github.com/sponyo531/fde-bench/releases/tag/v0.1.0) · [Quick start](#quick-start) · [Contributing](CONTRIBUTING.md) · [中文说明](README.zh-CN.md)
+[Project page](https://baidubce.github.io/FM-Agent/FDE-Bench/) · [Paper](https://baidubce.github.io/FM-Agent/FDE-Bench/assets/FDE-Bench.pdf) · [Case inventory](case/) · [Data download](https://github.com/sponyo531/fde-bench/releases/tag/v0.1.0) · [Quick start](#quick-start) · [Contributing](CONTRIBUTING.md) · [中文说明](README.zh-CN.md)
 
 FDE-Bench evaluates whether an agent can turn an incomplete business request into a deliverable that meets the customer's requirements. It separates asking the right clarification questions from producing a valid, useful solution.
 
@@ -12,7 +12,7 @@ The benchmark contains **49 cases: 29 combinatorial-optimization tasks and 20 ma
 
 A warehouse customer asks for each stack to contain “one product type,” with as few stock moves as possible. The missing rule: **different batches of the same SKU also count as mixed**. Clarifying that rule changes what a valid storage plan must achieve; the agent must then optimize its solution against the clarified requirements.
 
-[![Warehouse example: clarifying the batch-mixing rule changes which storage plans satisfy the customer's requirements.](../docs/fde-bench/assets/motivation.webp)](../docs/fde-bench/assets/motivation.webp)
+[![Warehouse example: clarifying the batch-mixing rule changes which storage plans satisfy the customer's requirements.](../docs/FDE-Bench/assets/motivation.webp)](../docs/FDE-Bench/assets/motivation.webp)
 
 *Figure 1(a) from the paper. The warehouse dialogue and customer reactions are illustrative, not measured agent runs. Select any figure to view it at full resolution.*
 
@@ -20,7 +20,7 @@ A warehouse customer asks for each stack to contain “one product type,” with
 <summary><strong>Task coverage: 49 real customer projects</strong></summary>
 
 <p align="center">
-  <a href="../docs/fde-bench/assets/coverage.webp"><img src="../docs/fde-bench/assets/coverage.webp" width="480" alt="FDE-Bench task coverage: 29 combinatorial-optimization and 20 machine-learning cases, grouped by computational subtype."></a>
+  <a href="../docs/FDE-Bench/assets/coverage.webp"><img src="../docs/FDE-Bench/assets/coverage.webp" width="480" alt="FDE-Bench task coverage: 29 combinatorial-optimization and 20 machine-learning cases, grouped by computational subtype."></a>
 </p>
 
 *Figure 1(b). Case counts reflect primary computational subtypes; business-scenario tags can overlap.*
@@ -31,7 +31,7 @@ A warehouse customer asks for each stack to contain “one product type,” with
 
 Each case links the initial customer request and data, the customer–FDE discussions, and the accepted deliverable from the same project. FDE review preserves the original request's level of detail, distills missing requirements, and checks the evaluator against the reference solution.
 
-[![Benchmark construction: real-project requests, discussions and accepted solutions become reviewed task inputs, requirement annotations and delivery evaluation.](../docs/fde-bench/assets/construction.webp)](../docs/fde-bench/assets/construction.webp)
+[![Benchmark construction: real-project requests, discussions and accepted solutions become reviewed task inputs, requirement annotations and delivery evaluation.](../docs/FDE-Bench/assets/construction.webp)](../docs/FDE-Bench/assets/construction.webp)
 
 *Figure 2. The construction pipeline produces agent-visible inputs, hidden requirements, a case-specific evaluator, and a customer-accepted FDE reference. Retained projects required more than one month of FDE work before acceptance.*
 
@@ -39,7 +39,7 @@ Each case links the initial customer request and data, the customer–FDE discus
 
 Agents start with the request and business data. In the main **Interact-Req** condition, they clarify requirements with a simulated customer, then build, execute, inspect, and revise their solution within **12 hours** and **up to 30 clarification rounds**. Hidden evaluation runs only after submission.
 
-[![Evaluation framework: an agent clarifies and iterates locally, then separate hidden pipelines score its final artifact and question coverage.](../docs/fde-bench/assets/evaluation.webp)](../docs/fde-bench/assets/evaluation.webp)
+[![Evaluation framework: an agent clarifies and iterates locally, then separate hidden pipelines score its final artifact and question coverage.](../docs/FDE-Bench/assets/evaluation.webp)](../docs/FDE-Bench/assets/evaluation.webp)
 
 *Figure 3. Delivery scoring checks constraints and quality against the FDE reference (1.0). Clarification scoring measures whether questions could elicit the annotated requirements; it does not establish that the agent used the answers. Agents receive no hidden-evaluator feedback during solving.*
 
@@ -58,11 +58,11 @@ The paper reports `Hidden`, `Interact-Req`, and `Full`, together with an oracle 
 
 ## What the experiments show
 
-Across **18 configurations**, the highest mean delivery Quality is **0.5510** (Codex + GPT-6-Astra), while the highest delivery success rate is **6.12%** (OpenHands + Qwen3.8-Max). These are different configurations. See the [interactive leaderboard](https://baidubce.github.io/FM-Agent/fde-bench/#results) for all reported results.
+Across **18 configurations**, the highest mean delivery Quality is **0.5510** (Codex + GPT-6-Astra), while the highest delivery success rate is **6.12%** (OpenHands + Qwen3.8-Max). These are different configurations. See the [interactive leaderboard](https://baidubce.github.io/FM-Agent/FDE-Bench/#results) for all reported results.
 
 In a separate four-case oracle experiment, providing more registered answers improves mean Quality from **0.059** at 0% coverage to **0.352** at 50% and **0.869** at 100%. The gains are nonlinear: a few unresolved requirements can invalidate an otherwise reasonable solution.
 
-[![Oracle coverage experiment: delivery quality on four cases and their macro mean increases nonlinearly as more registered answers are provided.](../docs/fde-bench/assets/oracle.webp)](../docs/fde-bench/assets/oracle.webp)
+[![Oracle coverage experiment: delivery quality on four cases and their macro mean increases nonlinearly as more registered answers are provided.](../docs/FDE-Bench/assets/oracle.webp)](../docs/FDE-Bench/assets/oracle.webp)
 
 *Figure 5. Codex + GPT-6-Astra receives nested subsets of registered answers without interaction. At 100% coverage, it receives all registered answers, not the complete business-information file used by Full. This four-case analysis is separate from the 49-case main evaluation.*
 
@@ -194,4 +194,4 @@ Listing experiments, validating downloaded release files, and dry-running a matr
 
 No open-source or dataset redistribution license has yet been assigned to this release. Public visibility does not itself grant such a license. See [LICENSE_STATUS.md](LICENSE_STATUS.md) for the current status and third-party-data notes. Dependency packages remain subject to their respective licenses.
 
-Please cite the paper linked from the [project page](https://baidubce.github.io/FM-Agent/fde-bench/) when discussing the benchmark.
+Please cite the paper linked from the [project page](https://baidubce.github.io/FM-Agent/FDE-Bench/) when discussing the benchmark.
