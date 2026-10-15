@@ -1,9 +1,17 @@
 # License status
 
-The project authors have not yet designated an open-source license for this source release or a redistribution license for its case data. No MIT, Apache, Creative Commons, or other license should be inferred from the repository being publicly accessible. Applicable rights remain with the respective rights holders.
+## Benchmark data: CC BY-NC-ND 4.0
 
-Third-party libraries, model metadata, agent frameworks, and data sources retain their own licenses and terms. A future project license does not automatically override them.
+The FDE-Bench benchmark data are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC BY-NC-ND 4.0). The full legal text is in [LICENSE-DATA](LICENSE-DATA).
 
-Case `040_frailty_cohort_analysis` references the US Health and Retirement Study (HRS). Its row-level cohort data, held-out outcomes, and per-person reference output are intentionally omitted pending confirmation of redistribution rights. The case protocol, evaluator, and aggregate reference metric remain available.
+"Benchmark data" means everything under `case/` (requests, requirement annotations, clarification targets, business data, evaluators, references, and scoring-only truth) and the data archives distributed with the release.
 
-This file records the current status; it does not grant a new license.
+In short, you may copy and share the data in unmodified form for non-commercial purposes, provided that you give appropriate credit by citing the [FDE-Bench paper](https://arxiv.org/abs/2610.14539). You may not use the data for commercial purposes, and you may not distribute modified versions. Running the benchmark and reporting results does not require distributing modified data. The legal text governs over this summary.
+
+## Source code
+
+No license has yet been designated for the harness and other source code outside `case/`. No MIT, Apache, or other open-source license should be inferred from the repository being publicly accessible. Applicable rights remain with the respective rights holders.
+
+## Third-party material
+
+Third-party libraries, model metadata, agent frameworks, and data sources retain their own licenses and terms. The licenses above do not override them.

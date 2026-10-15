@@ -102,7 +102,7 @@ If you use FDE-Bench, please cite:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-The MIT License does not cover FDE-Bench. Its code and case data live in [`FDE-Bench/`](FDE-Bench/); see [`FDE-Bench/LICENSE_STATUS.md`](FDE-Bench/LICENSE_STATUS.md) for their current status. The paper and figures under `docs/FDE-Bench/` remain with their authors, and the bundled fonts keep their own OFL licenses.
+The MIT License does not cover FDE-Bench. Its benchmark data are licensed under [CC BY-NC-ND 4.0](FDE-Bench/LICENSE-DATA); no license has yet been designated for its harness code. See [`FDE-Bench/LICENSE_STATUS.md`](FDE-Bench/LICENSE_STATUS.md) for details. The paper and figures under `docs/FDE-Bench/` remain with their authors, and the bundled fonts keep their own OFL licenses.
 
 ## Contact Us
 
