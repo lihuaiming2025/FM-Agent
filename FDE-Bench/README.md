@@ -192,6 +192,20 @@ Listing experiments, validating downloaded release files, and dry-running a matr
 
 ## License and provenance
 
-The benchmark data (everything under `case/` and the release data archives) are licensed under [CC BY-NC-ND 4.0](LICENSE-DATA). The harness and other source code are licensed under the [MIT License](LICENSE). See [LICENSE_STATUS.md](LICENSE_STATUS.md) for scope and third-party terms. See [LICENSE_STATUS.md](LICENSE_STATUS.md) for the current status and third-party-data notes. Dependency packages remain subject to their respective licenses.
+The benchmark data (everything under `case/` and the release data archives) are licensed under [CC BY-NC-ND 4.0](LICENSE-DATA). The harness and other source code are licensed under the [MIT License](LICENSE). See [LICENSE_STATUS.md](LICENSE_STATUS.md) for scope and third-party terms. Dependency packages remain subject to their respective licenses.
 
-Please cite the paper linked from the [project page](https://baidubce.github.io/FM-Agent/FDE-Bench/) when discussing the benchmark.
+## Citation
+
+If you use FDE-Bench, please cite:
+
+```bibtex
+@misc{li2026fdebench,
+      title={FDE-Bench: Evaluating End-to-End Delivery from Underspecified Real-World Business Requests},
+      author={Huaiming Li and Can Huang and Chufan Wu and Danyu Liu and Xiaomin Yuan and Qinze Li and Yui Lo and Wenhui Bai and Qianlong Wang and Zengle Ge and Xiyu Yan and Yuheng Cheng and Jinhui Ren and Guokai Chen and Jiaqun Liu and Haoran Li and Qianhui Liu and Annan Li and Jianmin Wu and Dawei Yin and Dou Shen},
+      year={2026},
+      eprint={2610.14539},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.14539},
+}
+```
