@@ -3,7 +3,7 @@
 This directory (served by GitHub Pages from `FM-Agent/docs/`) contains the static research page for **FDE-Bench: Evaluating End-to-End Delivery from Underspecified Real-World Business Requests**.
 
 - Live page: <https://baidubce.github.io/FM-Agent/FDE-Bench/>
-- Paper: [`assets/FDE-Bench.pdf`](assets/FDE-Bench.pdf)
+- Paper: <https://arxiv.org/abs/2610.14539> (a copy is kept at [`assets/FDE-Bench.pdf`](assets/FDE-Bench.pdf))
 - Code and case specifications: <https://github.com/baidubce/FM-Agent/tree/main/FDE-Bench>
 
 ## Preview locally
