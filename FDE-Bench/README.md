@@ -192,6 +192,6 @@ Listing experiments, validating downloaded release files, and dry-running a matr
 
 ## License and provenance
 
-The benchmark data (everything under `case/` and the release data archives) are licensed under [CC BY-NC-ND 4.0](LICENSE-DATA). No license has yet been designated for the harness source code. See [LICENSE_STATUS.md](LICENSE_STATUS.md) for the current status and third-party-data notes. Dependency packages remain subject to their respective licenses.
+The benchmark data (everything under `case/` and the release data archives) are licensed under [CC BY-NC-ND 4.0](LICENSE-DATA). The harness and other source code are licensed under the [MIT License](LICENSE). See [LICENSE_STATUS.md](LICENSE_STATUS.md) for scope and third-party terms. See [LICENSE_STATUS.md](LICENSE_STATUS.md) for the current status and third-party-data notes. Dependency packages remain subject to their respective licenses.
 
 Please cite the paper linked from the [project page](https://baidubce.github.io/FM-Agent/FDE-Bench/) when discussing the benchmark.
