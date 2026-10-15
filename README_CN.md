@@ -19,14 +19,14 @@
 </p>
  
 ## 📰 最新动态
-- **[2026-10]** 🔥 发布 **[FDE-Bench](https://baidubce.github.io/FM-Agent/FDE-Bench/)**：面向「需求不完整的真实业务请求」的端到端交付评测集，包含 49 个真实客户项目（29 个组合优化 + 20 个机器学习）和 266 个标注澄清点。[项目主页](https://baidubce.github.io/FM-Agent/FDE-Bench/) · [论文](https://baidubce.github.io/FM-Agent/FDE-Bench/assets/FDE-Bench.pdf) · [代码](FDE-Bench/)
+- **[2026-10]** 🔥 发布 **[FDE-Bench](https://baidubce.github.io/FM-Agent/FDE-Bench/)**：面向「需求不完整的真实业务请求」的端到端交付评测集，包含 49 个真实客户项目（29 个组合优化 + 20 个机器学习）和 266 个标注澄清点。[项目主页](https://baidubce.github.io/FM-Agent/FDE-Bench/) · [arXiv](https://arxiv.org/abs/2610.14539) · [代码](FDE-Bench/)
 - **[2026-03]** 发布 **[Famou for Science](Famou_for_Science/)**：基于伐谋的自主科研工作流，附核反应堆物理示例。
 - **[2025-10]** **[FM Agent](https://arxiv.org/abs/2510.26144)** 技术报告发布于 arXiv。
 
 ## 🗂️ 系列工作
 | 工作 | 类型 | 简介 | 链接 |
 | --- | --- | --- | --- |
-| **FDE-Bench** | 评测集 | 评估智能体能否通过与模拟客户对话澄清缺失需求，并交付满足真实客户验收标准的方案。 | [项目主页](https://baidubce.github.io/FM-Agent/FDE-Bench/) · [论文](https://baidubce.github.io/FM-Agent/FDE-Bench/assets/FDE-Bench.pdf) · [代码](FDE-Bench/) |
+| **FDE-Bench** | 评测集 | 评估智能体能否通过与模拟客户对话澄清缺失需求，并交付满足真实客户验收标准的方案。 | [项目主页](https://baidubce.github.io/FM-Agent/FDE-Bench/) · [arXiv](https://arxiv.org/abs/2610.14539) · [代码](FDE-Bench/) |
 | **Famou for Science** | 应用 | 用伐谋端到端推进科研、实验与论文写作；示例为二维双群中子扩散方程解析解搜索。 | [目录](Famou_for_Science/) |
 | **FM Agent** | 框架 | 结合大模型推理与大规模进化搜索的通用多智能体框架（详见下文）。 | [arXiv](https://arxiv.org/abs/2510.26144) · [技术报告](docs/FMAgent_TechReport.pdf) |
 
@@ -89,9 +89,12 @@ FM Agent 在无人为干预或调优的情况下，自主达到了最先进的�
 ```bibtex
 @misc{li2026fdebench,
       title={FDE-Bench: Evaluating End-to-End Delivery from Underspecified Real-World Business Requests},
-      author={Huaiming Li and Can Huang and others},
+      author={Huaiming Li and Can Huang and Chufan Wu and Danyu Liu and Xiaomin Yuan and Qinze Li and Yui Lo and Wenhui Bai and Qianlong Wang and Zengle Ge and Xiyu Yan and Yuheng Cheng and Jinhui Ren and Guokai Chen and Jiaqun Liu and Haoran Li and Qianhui Liu and Annan Li and Jianmin Wu and Dawei Yin and Dou Shen},
       year={2026},
-      url={https://baidubce.github.io/FM-Agent/FDE-Bench/},
+      eprint={2610.14539},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.14539},
 }
 ```
 

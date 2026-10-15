@@ -2,7 +2,7 @@
 
 **Evaluating End-to-End Delivery from Underspecified Real-World Business Requests**
 
-[Project page](https://baidubce.github.io/FM-Agent/FDE-Bench/) · [Paper](https://baidubce.github.io/FM-Agent/FDE-Bench/assets/FDE-Bench.pdf) · [Case inventory](case/) · [Data download](https://github.com/sponyo531/fde-bench/releases/tag/v0.1.0) · [Quick start](#quick-start) · [Contributing](CONTRIBUTING.md) · [中文说明](README.zh-CN.md)
+[Project page](https://baidubce.github.io/FM-Agent/FDE-Bench/) · [Paper (arXiv)](https://arxiv.org/abs/2610.14539) · [Case inventory](case/) · [Data download](https://github.com/sponyo531/fde-bench/releases/tag/v0.1.0) · [Quick start](#quick-start) · [Contributing](CONTRIBUTING.md) · [中文说明](README.zh-CN.md)
 
 FDE-Bench evaluates whether an agent can turn an incomplete business request into a deliverable that meets the customer's requirements. It separates asking the right clarification questions from producing a valid, useful solution.
 

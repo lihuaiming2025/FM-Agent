@@ -361,7 +361,7 @@
     }
     const citation = byId('citation-code');
     if (citation && data.authors.length) {
-      citation.textContent = `@misc{li2026fdebench,\n  title = {{FDE-Bench}: Evaluating End-to-End Delivery from Underspecified Real-World Business Requests},\n  author = {${data.authors.map((author) => author.name).join(' and ')}},\n  year = {2026}\n}`;
+      citation.textContent = `@misc{li2026fdebench,\n  title = {{FDE-Bench}: Evaluating End-to-End Delivery from Underspecified Real-World Business Requests},\n  author = {${data.authors.map((author) => author.name).join(' and ')}},\n  year = {2026},\n  eprint = {2610.14539},\n  archivePrefix = {arXiv},\n  primaryClass = {cs.AI},\n  url = {https://arxiv.org/abs/2610.14539}\n}`;
     }
     const copyStatus = byId('copy-status');
     const legacyCopy = (text) => {
